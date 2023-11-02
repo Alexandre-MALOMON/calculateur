@@ -1,0 +1,204 @@
+*{
+    position: relative;
+    box-sizing: border-box;
+    font-family: "Raleway", "Raleway-fallback", sans-serif;
+}
+/*header start*/
+.logo{
+   height: 100px;
+   margin-top: -40px;
+   object-fit: contain;
+}
+.headerElement{
+    padding-bottom: 2%;
+    z-index: 9000;
+   /*  position: fixed; */
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    top: 0px; 
+    background-color: white; 
+   
+   /*  position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9000;
+    transform: translate(-50%, -50%);
+    background-color: white; */
+    
+}
+.header{
+   
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    top: 30px; 
+    padding: 0; 
+
+   /*  display: flex;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    top: 30px;
+    padding: 0;
+    align-items: center; */
+   
+       
+}
+.mot{
+    line-height: 2px;
+}
+.contact{
+    line-height: 2px;
+}
+.contact span{
+   color: #e4552c;
+    font-size: 20px;
+  
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: .42px;
+}
+.textColor{
+    
+    color: #314c88;
+    font-size: 18px;
+    font-size: 1.125rem;
+    letter-spacing: -.18px;
+    font-weight: 700;
+}
+.text .contact,p{
+    font-size: .875rem;
+    font-weight: 300;
+}
+@media screen and (max-width: 1000px){
+    .mot{
+        display: none;
+    }
+}
+@media screen and (max-width: 600px){
+   
+   
+    
+   
+}
+/*header end*/
+/*fourniture*/
+.contente{
+    margin-top: 83px;
+}
+.title{
+    padding-bottom: 0;
+    color: #314c88;
+    font-weight: 800;
+}
+.nav-fill .nav-item .nav-link, .nav-justified .nav-item .nav-link {
+    display: block;
+    height: 100%;
+    padding: 10px 20px;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: normal;
+    letter-spacing: .28px;
+    border: none;
+    border-right: 1px solid #6579a6;
+    border-radius: 0;
+    text-decoration: none;
+    background-color:  #314c88;
+    font-size: .9375rem;
+    line-height: 23px;
+}
+
+.activews{
+    /* color: #e4552c; */
+    background-color: #e4552c;
+    border-color: var(--bs-nav-tabs-link-active-border-color);
+}
+.card {
+    height: 100% !important;
+    padding: 20px !important;
+    text-align: center !important;
+    background: #fafcff !important;
+}
+.number_qty{
+    display: flex;
+   justify-content: space-between;
+    margin: 10px 0;
+}
+
+.fourniture{
+    background-color: #FFF;
+    border: none;
+}
+.section-2{
+   
+    top: 5px;
+}
+.span:hover{
+    width: 34px;
+    color: #FFF;
+    background: #11daa3;
+    border-radius: 20px;
+}
+
+.flex-item {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Utilisation de flex-basis pour définir la largeur de chaque élément */
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+   /*  background-color: #f0f0f0; */
+}
+.dimension{
+    width: 100%;
+    background-image: url('/public/background_qty_m3.png');
+    background-size: 1000px;
+    /* background-repeat: no-repeat; */
+    background-size: auto;
+    padding: 14px 20px;
+   
+}
+.titre{
+    display: block;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.clear{
+    color: #FFF;
+    background: #11daa3;
+    border-color: #11daa3;
+    box-shadow: 0 3px 3px rgba(0,0,0,.18);
+    height: 50px;
+    width: 100%;
+    border-radius: 30px;
+    padding: 15px;
+}
+/* Média requête pour la mise en page responsive */
+@media screen and (max-width: 768px) {
+    .flex-item {
+        flex: 0 0 calc(50% - 20px); /* Réduire la largeur à 50% sur les écrans de largeur maximale de 768px */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .flex-container {
+        flex-direction: column; /* Changer la direction de la flexbox en colonne sur les écrans de largeur maximale de 480px */
+    }
+    .flex-item {
+        flex: 1; /* Agrandir les éléments pour les remplir en largeur sur les écrans de largeur maximale de 480px */
+    }
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #FFFFFF;
+    background-color: #e4552c;
+    border-color: var(--bs-nav-tabs-link-active-border-color);
+}
